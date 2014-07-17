@@ -1,0 +1,54 @@
+
+<div class="row-fluid">
+   <div class="span4">
+
+   <article class ="well">
+      <h1>Descriptions</h1>
+      <p  class ="left">Our purpose is simple: It’s giving you the freedom to take journeys; to discover new experiences; to take charge of your world. It’s the power to connect who you are today with who you want to be tomorrow. In a changing world, we’re changing faster. We are relentless in our pursuit of discovery and innovation, creating technologies and providing services that empower. Opening the door to a world of possibility.</p>
+   </article>
+   <article>
+     <h4>Bettering Everyday Experiences</h4>
+     <p  class ="left">From our innovations in consumer electronics to our developments in biopharmaceuticals, Samsung shares impactful experiences each day with people around the globe. Through our devotion to create superior products and services across all areas of our business, we strive to enhance the lives of people everywhere and bring positive change to the world around us.</p>
+   </article>
+   <article>
+     <h6>Samsung’s Contributions,</h6>
+     <h4>Committed to Social Responsibility</h4>
+     <p  class ="left">We measure our success not only in our business achievements, but also by how well we serve our community, protect our planet‘s resources, and make a difference in people's lives. We embrace our responsibility to contribute as a good citizen, taking action around the world to foster a better society, protect and improve the environment, and strengthen our communities</p>
+   </article>
+  
+   </div>
+  <div class="span8">
+  <h1>Resume</h1>
+  	<%=simple_form_for @carrier,url:carriers_path do |f|%>
+  	<p>
+  		<%=f.input :first_name%>
+  	</p>
+  	<p>
+  		<%=f.input :last_name%>
+  	</p>
+  	<p>
+  		<%=f.input :city%>
+  	</p>
+  	<p>
+  		<%=f.input :state%>
+  	</p>
+  	<p>
+  		<%=f.input :country%>
+  	</p>
+  	<p>
+  		<%=f.input :email%>
+  	</p>
+  	<p>
+  		<%=f.input :phone%>
+  	</p>
+  	<p>
+  		<%= f.input :resume, as: :file%>
+  	</p>
+  	<p>
+  		<%= f.input :photo, as: :file%>
+  	</p>
+  	<%=f.submit%>
+
+  	 	<%end%>
+  </div>
+</div>

@@ -37,9 +37,13 @@ gem 'spring',        group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-gem "therubyracer"
+
 gem "less-rails"
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 gem 'simple_form'
+gem 'country_select'
+gem 'carrierwave'
+gem 'quiet_assets'
+
 
 

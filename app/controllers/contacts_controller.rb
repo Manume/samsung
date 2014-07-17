@@ -10,7 +10,7 @@ class ContactsController < ApplicationController
         # Tell the UserMailer to send a welcome email after save
         ContactMailer.contact_email(@contact).deliver
  
-        format.html { redirect_to(new_contact_paths, notice: 'Contact was successfully created.') }
+        format.html { redirect_to(new_contact_path, notice: 'Contact was successfully created.') }
         format.json { render json: @contact, status: :created, location: @contact }
       else
         format.html { render action: 'new' }
@@ -19,11 +19,10 @@ class ContactsController < ApplicationController
     end
  
 	end
-	def show
-		@contact = Contact.find(params[:id])
-	end
+	
 	private
 	def contact_params
 		params.require(:contact).permit(:name,:email,:message)
 	end
+	
 end

@@ -53,6 +53,7 @@
             
               <li><%= link_to "About",   welcome_about_path %></li>
               <li><%= link_to "Contact", {:controller => 'contacts', :action => 'new'}  %></li>
+              <li><%= link_to "Carrier", {:controller => 'carriers', :action => 'new'} %></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -73,7 +74,9 @@
         </div><!--/span-->
         <div class="span9">
           <%= bootstrap_flash %>
+          <div class="container">
           <%= yield %>
+          </div>
         </div>
       </div><!--/row-->
 
