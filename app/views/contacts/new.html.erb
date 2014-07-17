@@ -1,0 +1,13 @@
+<h1>Contact</h1>
+<%=simple_form_for @contact do |f|%>
+<p>
+	<%=f.input :name%>
+</p>
+<p>
+	<%=f.input :email%>
+</p>
+<p>
+	<%=f.input :message, as: :text %>
+</p>
+<%=f.submit%>
+<%end%>
