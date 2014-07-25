@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
+   devise_for :users, :path => '', :path_names => {:sign_up => 'signup', :sign_in => 'signin', :sign_out => 'signout'}
+  
   root 'welcome#index'
   resources :carriers
 
   resources :contacts
+  
   get 'welcome/index'
 
  get 'welcome/about'

@@ -44,6 +44,10 @@ gem 'simple_form'
 gem 'country_select'
 gem 'carrierwave'
 gem 'quiet_assets'
+gem 'haml-rails'
+gem 'erb2haml'
+gem 'pry-rails'
+gem 'devise'
 
 
 

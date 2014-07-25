@@ -1,0 +1,28 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+  %body
+    %h1
+      Resume From: #{@carrier.first_name}
+    %p
+      First name : #{@carrier.first_name}.
+      %br/
+      Last name : #{@carrier.last_name}.
+      %br/
+      City : #{@carrier.city}.
+      %br/
+      State: #{@carrier.state}.
+      %br/
+      Country: #{@carrier.country}.
+      %br/
+      Email: #{@carrier.email}.
+      %br/
+      Phone: #{@carrier.phone}.
+      %br/
+      = link_to "download resume", "http://0.0.0.0:3000/#{@carrier.resume_url}"
+      \.
+      %br/
+      photo: #{link_to "Download photo","http://0.0.0.0:3000/#{@carrier.photo_url}"}.
+      %br/
+    %p Thanks for joining and have a great day!

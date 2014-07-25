@@ -1,0 +1,27 @@
+.row-fluid
+  .span1
+  .span5
+    .well
+      %article
+        %h2 Address
+        %p Drishya building, 
+        %p KINFRA Filim & Video Park,
+        %p Special Economic Zone, Sainik School P.O,
+        %p Kazakuttam, Trivandrum-695585
+        %p email:info@ideologysoft.com
+        %p Phone: 0471 2167522 / 0471 2415022 
+
+
+
+
+  .span5
+    %h1 Feedback
+    = simple_form_for @contact do |f|
+      %p
+        = f.input :name
+      %p
+        = f.input :email
+      %p
+        = f.input :message, as: :text
+      = f.submit class:"btn btn-success"
+  .span1    

@@ -1,4 +1,5 @@
 class CarriersController < ApplicationController
+  before_action :authenticate_user!
   def new
   	@carrier = Carrier.new
   end
@@ -21,6 +22,6 @@ class CarriersController < ApplicationController
 	end
 	private
 	def carrier_params
-		params.require(:carrier).permit(:first_name,:last_name,:city,:state,:country,:email,:phone_number,:resume,:photo)
+		params.require(:carrier).permit(:first_name,:last_name,:city,:state,:country,:email,:phone,:resume,:photo)
 	end
 end

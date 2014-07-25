@@ -7,7 +7,7 @@ class CreateCarriers < ActiveRecord::Migration
       t.string :state
       t.string :country
       t.string :email
-      t.string :phone
+      t.integer :phone
 
       t.timestamps
     end
