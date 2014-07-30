@@ -1,0 +1,33 @@
+-if user_signed_in?
+  %p#notice= notice
+
+  %p
+    %b Name:
+    = @portfolio.name
+  %p
+    %b Description:
+    = @portfolio.description
+  %p
+    %b Image:
+    =image_tag @portfolio.image_url
+
+
+  = link_to 'Edit', edit_portfolio_path(@portfolio)
+
+  \|
+  = link_to 'Back', portfolios_path
+  = link_to 'Destroy', @portfolio, :method => :delete, :data => { :confirm => 'Are you sure?' }
+-else
+  %p#notice= notice
+
+  %p
+    %b Name:
+    = @portfolio.name
+  %p
+    %b Description:
+    = @portfolio.description
+  %p
+    %b Image:
+    =image_tag @portfolio.image_url
+
+

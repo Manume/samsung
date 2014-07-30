@@ -1,5 +1,5 @@
 class CarriersController < ApplicationController
-  before_action :authenticate_user!
+  
   def new
   	@carrier = Carrier.new
   end

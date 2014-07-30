@@ -1,8 +1,39 @@
-%h1 Welcome To Samsung
-
-%article.well
-  %p
-    SΛMSUNG is a South Korean multinational conglomerate company headquartered in Samsung Town, Seoul. It comprises numerous subsidiaries and affiliated businesses, most of them united under the Samsung brand, and is the largest South Korean chaebol (business conglomerate).
-  %p
-    Samsung was founded by Lee Byung-chul in 1938 as a trading company. Over the next three decades the group diversified into areas including food processing, textiles, insurance, securities and retail. Samsung entered the electronics industry in the late 1960s and the construction and shipbuilding industries in the mid-1970s; these areas would drive its subsequent growth. Following Lee's death in 1987, Samsung was separated into four business groups – Samsung Group, Shinsegae Group, CJ Group and Hansol Group. Since the 1990s Samsung has increasingly globalized its activities, and electronics, particularly mobile phones and semiconductors, have become its most important source of income
-= image_tag "a.jpg"
+#carousel-example-generic.carousel.slide{"data-ride" => "carousel"}
+  %ol.carousel-indicators
+    %li.active{"data-slide-to" => "0", "data-target" => "#carousel-example-generic"}
+    %li{"data-slide-to" => "1", "data-target" => "#carousel-example-generic"}
+    %li{"data-slide-to" => "2", "data-target" => "#carousel-example-generic"}
+  .carousel-inner
+    .item.active
+      = image_tag "river_trees_summer_during_the_shore_92679_1920x1080.jpg"
+      .carousel-caption
+        %p The Antennae Galaxies
+        %p
+          %a{:href => "http://hubblesite.org/gallery/album/entire/pr2006046a/xlarge_web/npp/128/"} Hubblesite.org &raquo;
+    .item
+      = image_tag "river_trees_summer_during_the_shore_92679_1920x1080.jpg"
+    .item
+      = image_tag "a.jpg"
+      .carousel-caption
+        %p Carina Nebula: The Caterpillar
+        %p
+          %a{:href => "http://hubblesite.org/gallery/album/entire/pr2007016e/xlarge_web/npp/128/"} Hubblesite.org &raquo;
+  %a.left.carousel-control{"data-slide" => "prev", :href => "#carousel-example-generic", :role => "button"}
+    %span.glyphicon.glyphicon-chevron-left
+  %a.right.carousel-control{"data-slide" => "next", :href => "#carousel-example-generic", :role => "button"}
+    %span.glyphicon.glyphicon-chevron-right
+/ Main jumbotron for a primary marketing message or call to action
+.cover
+.cover.well
+  .pull-center
+    %article
+      %h1 Welcome To SΛMSUNG
+      %p SΛMSUNG is a South Korean multinational conglomerate company headquartered in Samsung Town, Seoul. It comprises numerous subsidiaries and affiliated businesses, most of them united under the Samsung brand, and is the largest South Korean chaebol (business conglomerate).
+      %p
+        Samsung Galaxy is one the most successful variants in smartphone market in India as the brand has regularly updated this line of smartphones with new technology and fresh designs. Excellent touch screen, latest version of Android OS, highly advanced camera and expandable memory slot: these are some of the glaring features of Samsung Galaxy mobile phones. The phone has received overwhelming response from businessmen as well as working executives, who are on the go. This phone has enhanced the lifestyle of millions of Indians, who happily migrated from feature phones to smartphones.
+        
+        2009 was the year when Samsung Galaxy mobiles hit Indian markets, and since then, there has been a sea-change in the attitude and lifestyle of many Indians. From its first Galaxy phone to the latest Galaxy S5, Samsung has introduced more than 65 phones in Galaxy series. With smart features, the Brand has always maintained affordable price of Samsung Galaxy phones in India. With pocket-friendly price, Samsung Galaxy has emerged as unbeaten player on the Indian smartphone arena.
+.container
+  .span3.well
+    %h3 welcome
+    %p.p1 2009 was the year when Samsung Galaxy mobiles hit Indian markets, and since then, there has been a sea-change in the attitude and lifestyle of many Indians. From its first Galaxy phone to the latest Galaxy S5, Samsung has introduced more than 65 phones in Galaxy series. With smart features, the Brand has always maintained affordable price of Samsung Galaxy phones in India. With pocket-friendly price, Samsung Galaxy has emerged as unbeaten player on the Indian smartphone arena

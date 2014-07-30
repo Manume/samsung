@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :portfolios
+
    devise_for :users, :path => '', :path_names => {:sign_up => 'signup', :sign_in => 'signin', :sign_out => 'signout'}
   
   root 'welcome#index'
@@ -8,7 +10,7 @@ Rails.application.routes.draw do
   
   get 'welcome/index'
 
- get 'welcome/about'
+ get '/about-us'=>'welcome#about'
 
   get 'welcome/contact'
 

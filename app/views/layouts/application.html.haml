@@ -37,10 +37,18 @@
           = link_to "Samsung",root_path,:class=> "brand"
           .container-fluid.nav-collapse
             %ul.nav
-              %li= link_to "About",   welcome_about_path
-              %li= link_to "Careers", new_carrier_path 
-              %li= link_to "Contact", new_contact_path
-              %li= link_to "Signout", destroy_user_session_path, :method => :delete
+              -unless user_signed_in?
+                %li= link_to "About",   about_us_path
+                %li= link_to "Portfolio",portfolios_path
+                %li= link_to "Careers", new_carrier_path 
+                %li= link_to "Contact", new_contact_path
+                %li= link_to "Sign In",new_user_session_path
+
+              -else
+                
+                %li= link_to "Portfolio",portfolios_path
+                %li.dropdown= link_to "Signout", destroy_user_session_path, :method => :delete
+                
               
           / /.nav-collapse
     .container-fluid

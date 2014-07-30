@@ -2,7 +2,6 @@ class DeviseCreateUsers < ActiveRecord::Migration
   def change
 
     create_table(:users) do |t|
-      t.lockable :lock_strategy => :failed_attempts, :unlock_strategy => :both
       ## Database authenticatable
       t.string :email,              null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
